@@ -6,6 +6,12 @@ import { useForm } from "react-hook-form";
 export function Authorization(){
     const {register, handleSubmit} = useForm();
     const navigate = useNavigate();
+
+    const handleNext = () => {
+      const route = '/personalCabinetTeacher';
+      navigate(route);
+    };
+  
     return (
         <div className="registration-form-container">
           <div className="registration-form">
@@ -60,7 +66,8 @@ export function Authorization(){
                 />
                 </div>
               <div className="form-group">
-                <button
+                <button 
+                  onClick={handleNext}
                   type="submit"
                   className="form-button">
                   Войти в аккаунт

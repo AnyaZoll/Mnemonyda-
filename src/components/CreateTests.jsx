@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import './CreateTests.css';
 
-
-export function CreateTest() {
+export function CreateTests() {
 
     
-    class CreateTest{
+    class CreateTests{
         constructor(titleTest, countQuestions, isTime){
             this.titleTest = titleTest;
             this.countQuestions = countQuestions;
@@ -92,41 +92,15 @@ export function CreateTest() {
     }
 
     return (
-        <div className="page">
-            <div className="container">
-                <label className="option">
-                <label className="option label-text">
-                 
-                </label>
-                    <input type='text' placeholder="Название теста" value={testName} onChange={(e) => setTestName(e.target.value)} />
-                </label>
-                <label className="option">
-             
-                    <input type='text' placeholder="Условие задания:" value={newQuestion.condition} onChange={(e) => setNewQuestion({ ...newQuestion, condition: e.target.value })} />
-                </label>
-                
-                <select  value={newQuestion.answerType} onChange={(e) => setNewQuestion({ ...newQuestion, answerType: e.target.value })}>
-                   
-                    <option className="cl" value="typeOne">Один вариант ответа</option>
-                    <option  className="cl" value="typeMany">Несколько вариантов ответа</option>
-                    <option  className="cl" value="typeString">Необходимо ввести ответ на вопрос</option>
-            
-                </select>
-               
-                {newQuestion.answerType === 'typeMany' && (
-                    <div>
-                         <label className="option label-text">Введите варианты ответов (через запятую):</label>
-                        <input type='text' value={newQuestion.answerOptions.join(',')} onChange={handleAddAnswer} />
-                    </div>
-                )}
-                <div>
-                    <label>Введите правильный ответ (через запятую):</label>
-                    <input type='text' value={correctAnswer} onChange={(e) => setCorrectAnswer(e.target.value)} />
-                </div>
-                <button className="btn1" onClick={handleAddQuestion}>Добавить вопрос</button>
-                <button className="btn1"onClick={handleCreateTest}>Создать тест</button>
-                <p>Количество вопросов: {questions.length}</p>
-            </div>
-        </div>
+        <div className="wrapper_page">
+            <header className="createtest">
+            <h3 className="title_createtest">Создание теста</h3>
+            </header>
+            <section class="container_question">
+                <p>Название теста:</p>
+            </section>
+
+
+       </div>
     );
 }

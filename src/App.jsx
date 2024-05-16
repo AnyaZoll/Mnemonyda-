@@ -9,6 +9,8 @@ import { Title } from './components/Title';
 import { CreateTestButton } from './components/CreateTestButton';
 import {PrintTest} from './components/PrintTest';
 import{Authorization} from './components/Authorization';
+import { PersonalCabinetTeacher } from './components/PersonalCabinetTeacher';
+import {CreateTests} from './components/CreateTests';
 
 
 export function App() {
@@ -22,6 +24,8 @@ export function App() {
         <Route path="" element={<HomePage />} />
         <Route path="/PrintTest" element={<PrintTest/>} />
         <Route path="/Authorization-st" element={<Authorization/>} />
+        <Route path="/personalCabinetTeacher" element={<PersonalCabinetTeacher/>} />
+        <Route path="/createQuestion" element={<CreateTests/>}/> 
       </Routes>
     </BrowserRouter>
   );
