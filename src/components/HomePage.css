@@ -1,21 +1,10 @@
-.container1{
+.container_homepage{
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #00b1a8; /* Голубой цвет фона */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); 
   }
-  
-  .form-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #f30e0e;
-    padding: 2rem;
-    border-radius: 8px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Тень для формы */
-  }
-  
   
   .form {
     display: flex;
@@ -24,7 +13,7 @@
   }
   .description {
     font-size: 3rem;
-    color: #424242; /* Цвет описания */
+    color: #424242; 
     text-align: center;
     margin-bottom: 1.5rem;
   }
@@ -52,7 +41,7 @@
   }
   .btn {
     
-    background-color: #2196f3; /* Цвет кнопки */
+    background-color: #2196f3; 
     color: #fff;
     font-size: 1.2rem;
     padding: 0.8rem 2rem;
@@ -62,5 +51,5 @@
   }
   
   .btn:hover {
-    background-color: #1976d2; /* Цвет кнопки при наведении */
+    background-color: #1976d2; 
   }

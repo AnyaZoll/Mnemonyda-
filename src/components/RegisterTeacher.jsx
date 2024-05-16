@@ -3,11 +3,11 @@ import { useNavigate } from "react-router-dom";
 import './RegisterStudent.css'; 
 import { useForm } from "react-hook-form";
 
-class FormStudent {
-    constructor(name, secondName, classStudent, email) {
+class FormTeacher {
+    constructor(secondName,name, middleName, email) {
         this.name = name;
         this.secondName = secondName;
-        this.classStudent = classStudent;
+        this.middleName = middleName;
         this.email = email;    
     }
 
@@ -16,7 +16,7 @@ class FormStudent {
 const formReg = function () {
     alert("Регистрация прошла успешно!");
 }
-export function RegisterStudent() {
+export function RegisterTeacher() {
    const {register, handleSubmit} = useForm();
    const navigate = useNavigate();
  
@@ -28,7 +28,7 @@ export function RegisterStudent() {
         return (
         <div className="registration-form-container">
           <div className="registration-form">
-            <h2 className="registration-form-title">Регистрация студента</h2>
+            <h2 className="registration-form-title">Регистрация преподавателя</h2>
             <form className="registration-form-form" onSubmit={handleSubmit(formReg)}>
               <div className="form-group">
                 <label htmlFor="name" className="form-label">
@@ -52,6 +52,18 @@ export function RegisterStudent() {
                   placeholder="Введите фамилию"
                   className="form-input"
                   {...register('secondName')}
+                />
+              </div>
+              <div className="form-group">
+                <label htmlFor="middleName" className="form-label">
+                  Отчество
+                </label>
+                <input
+                  id="middleName"
+                  type="text"
+                  placeholder="Введите отчество"
+                  className="form-input"
+                  {...register('middleName')}
                 />
               </div>
               <div className="form-group">

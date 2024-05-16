@@ -11,15 +11,15 @@ export function HomePage() {
   };
 
   const handleNext = () => {
-    const route = userType === 'student' ? '/register-student' : '/createButton-test';
+    const route = userType === 'student' ? '/register-student' : '/register-teacher';
     navigate(route);
   };
 
   return ( 
-    <div className="container1">
+    <div className="container_homepage">
       <div className="form">
         <p className="description">Это платформа для создания тестов</p>
-        <p className="sub-description">Выберите:</p>
+        <p className="">Выберите:</p>
         <div className="options">
           <label className="option">
             <input type="radio" value='student' checked={userType === 'student'} onChange={handleUserTypeChange} />

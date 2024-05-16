@@ -3,36 +3,17 @@ import { useNavigate } from "react-router-dom";
 import './RegisterStudent.css'; 
 import { useForm } from "react-hook-form";
 
-class FormStudent {
-    constructor(name, secondName, classStudent, email) {
-        this.name = name;
-        this.secondName = secondName;
-        this.classStudent = classStudent;
-        this.email = email;    
-    }
-
-}
-
-const formReg = function () {
-    alert("Регистрация прошла успешно!");
-}
-export function RegisterStudent() {
-   const {register, handleSubmit} = useForm();
-   const navigate = useNavigate();
- 
-   const handleNext = () => {
-    navigate('/Authorization-st');
-  };
- 
-   
-        return (
+export function Authorization(){
+    const {register, handleSubmit} = useForm();
+    const navigate = useNavigate();
+    return (
         <div className="registration-form-container">
           <div className="registration-form">
-            <h2 className="registration-form-title">Регистрация студента</h2>
-            <form className="registration-form-form" onSubmit={handleSubmit(formReg)}>
+            <h2 className="registration-form-title">Вход</h2>
+            <form className="registration-form-form">
               <div className="form-group">
                 <label htmlFor="name" className="form-label">
-                  Имя
+                  Фамилия
                 </label>
                 <input
                   id="name"
@@ -44,7 +25,7 @@ export function RegisterStudent() {
               </div>
               <div className="form-group">
                 <label htmlFor="name" className="form-label">
-                  Фамилия
+                  Имя
                 </label>
                 <input
                   id="secondName"
@@ -55,63 +36,39 @@ export function RegisterStudent() {
                 />
               </div>
               <div className="form-group">
-                <label htmlFor="email" className="form-label">
-                  Почта
-                </label>
-                <input
-                  id="phone"
-                  type="email"
-                  placeholder="Введите почту"
-                  className="form-input"
-                  {...register('phone')}
-                />
-                </div>
-                <div className="form-group">
                 <label htmlFor="password" className="form-label">
                   Пароль
                 </label>
                 <input
-                  id="phone"
-                  type="password"
+                  id="password"
+                  type="tel"
                   placeholder="Введите пароль"
                   className="form-input"
-                  {...register('phone')}
+                  {...register('password')}
                 />
                 </div>
                 <div className="form-group">
                 <label htmlFor="password" className="form-label">
-                  Введите пароль повторно
+                  Повторный пароль
                 </label>
                 <input
-                  id="phone"
-                  type="password"
+                  id="password"
+                  type="tel"
                   placeholder="Введите пароль повторно"
                   className="form-input"
-                  {...register('phone')}
+                  {...register('password')}
                 />
                 </div>
               <div className="form-group">
                 <button
                   type="submit"
                   className="form-button">
-                  Зарегистрироваться
+                  Войти в аккаунт
                 </button>
               </div>
-              <div className="form-group">
-                  <button
-                  onClick={handleNext}
-                  className="form-button">
-                  Уже существует аккаунт
-                  </button>
-                </div>
+             
             </form>
           </div>
         </div>
       );
-
-    
-        
- 
-   
-    
 }

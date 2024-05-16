@@ -3,6 +3,22 @@ import { useNavigate } from "react-router-dom";
 import "./CreateTest.css";
 
 export function CreateTest() {
+
+    
+    class CreateTest{
+        constructor(titleTest, countQuestions, isTime){
+            this.titleTest = titleTest;
+            this.countQuestions = countQuestions;
+            this.isTime = isTime;
+        }
+    }
+
+    class CreateTestFactory{
+        createTest(titleTest, countQuestions, isTime){
+            return new CreateTest(titleTest, countQuestions, isTime);
+
+        }
+    } 
     class PrintQuestion {
         constructor(conditionText, answer, typeAnswer, correctAnswer, answerOptions = []) {
             this.conditionText = conditionText;

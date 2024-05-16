@@ -1,43 +1,67 @@
-.register-container {
-    max-width: 400px;
-    margin: 0 auto;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    background-color: #f9f9f9;
-}
 
-.register-container h2 {
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.register-container form {
+.registration-form-container {
+    min-height: 100vh;
     display: flex;
-    flex-direction: column;
-}
-
-.register-container label {
-    font-weight: bold;
-    margin-bottom: 5px;
-}
-
-.register-container input {
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-.register-container button {
-    padding: 10px;
-    background-color: #007bff;
-    color: #00c2fd;
-    border: solid;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.register-container button:hover {
-    background-color: #0056b3;
-}
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .registration-form {
+    max-width: 100%;
+    width: 360px;
+    padding: 1.5rem;
+    background-color: #fff;
+    border-radius: 0.5rem;
+    box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1), 0 4px 6px -2px rgba(0,0,0,0.05);
+  }
+  
+  .registration-form h2 {
+    text-align: center;
+    font-size: 1.875rem;
+    font-weight: 700;
+    color: #1a202c;
+    margin-bottom: 1.5rem;
+  }
+  
+  .registration-form .form-group {
+    margin-bottom: 1rem;
+  }
+  
+  .registration-form label {
+    display: block;
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: #4a5568;
+    margin-bottom: 0.5rem;
+  }
+  
+  .registration-form input {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #e2e8f0;
+    border-radius: 0.25rem;
+  }
+  
+  .registration-form input:focus {
+    outline: none;
+    border-color: #667eea;
+    box-shadow: 0 0 0 3px #3b82f6;
+  }
+  
+  .registration-form button {
+    width: 100%;
+    padding: 0.5rem;
+    color: #fff;
+    background-color: #3b82f6;
+    border-radius: 0.25rem;
+    transition: background-color 0.2s;
+  }
+  
+  .registration-form button:hover {
+    background-color: #3b82f6;
+  }
+  
+  .registration-form button:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px #3b82f6;
+  }
