@@ -29,7 +29,7 @@ export function RegisterTeacher() {
         <div className="registration-form-container">
           <div className="registration-form">
             <h2 className="registration-form-title">Регистрация преподавателя</h2>
-            <form className="registration-form-form" onSubmit={handleSubmit(formReg)}>
+            <form action="#" method="post"className="registration-form-form" onSubmit={handleSubmit(formReg)}>
               <div className="form-group">
                 <label htmlFor="name" className="form-label">
                   Имя

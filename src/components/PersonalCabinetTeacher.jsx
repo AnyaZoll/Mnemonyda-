@@ -25,15 +25,15 @@ export function PersonalCabinetTeacher() {
       <section>
       <div className='container_personal'>
         <p className='id_teahcer'>ФИО:</p>
-        <div class="list">
+        <div classNamr="list">
           <p className='subj_test'>Предметы, по которым можно составить тест:</p>
           <div>
             <input type="checkbox" id="subName"></input>
-            <label for="subNAme">Информатика</label>
+            <label htmlFor="subNAme">Информатика</label>
           </div>
           <div>
             <input type="checkbox" id="subName1"></input>
-            <label for="subNAme1">Математика</label>
+            <label htmlFor="subNAme1">Математика</label>
           </div>
           <div>
 

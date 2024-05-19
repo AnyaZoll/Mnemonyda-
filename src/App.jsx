@@ -10,7 +10,7 @@ import { CreateTestButton } from './components/CreateTestButton';
 import {PrintTest} from './components/PrintTest';
 import{Authorization} from './components/Authorization';
 import { PersonalCabinetTeacher } from './components/PersonalCabinetTeacher';
-import {CreateTests} from './components/CreateTests';
+import {CreateTests} from './components/questionsComponents/CreateTests';
 
 
 export function App() {

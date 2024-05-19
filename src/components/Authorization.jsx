@@ -16,7 +16,7 @@ export function Authorization(){
         <div className="registration-form-container">
           <div className="registration-form">
             <h2 className="registration-form-title">Вход</h2>
-            <form className="registration-form-form">
+            <form action="#" method="post"  className="registration-form-form">
               <div className="form-group">
                 <label htmlFor="name" className="form-label">
                   Фамилия
