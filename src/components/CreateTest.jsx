@@ -56,12 +56,14 @@ export function CreateTest() {
             return this.questions;
         }
     }
-
+    
     const [testName, setTestName] = useState('');
     const [newQuestion, setNewQuestion] = useState({ condition: '', answer: '', answerType: '', correctAnswer: '', answerOptions: [] });
     const [questions, setQuestions] = useState([]);
     const [correctAnswer, setCorrectAnswer] = useState('');
     const navigate = useNavigate();
+
+    const questionsFactory = new QuestionFactory();
 
     const handleCreateTest = () => {
         navigate('/PrintTest', { state: { testName, questions } });

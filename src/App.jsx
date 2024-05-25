@@ -7,11 +7,10 @@ import {RegisterTeacher} from './components/RegisterTeacher';
 import { CreateTest } from './components/CreateTest';
 import { Title } from './components/Title';
 import { CreateTestButton } from './components/CreateTestButton';
-import {PrintTest} from './components/PrintTest';
 import{Authorization} from './components/Authorization';
 import { PersonalCabinetTeacher } from './components/PersonalCabinetTeacher';
 import {CreateTests} from './components/questionsComponents/CreateTests';
-
+import {PrintTests} from './components/printTest/PrintTests';
 
 export function App() {
   return (
@@ -22,10 +21,11 @@ export function App() {
         <Route path="/createButton-test" element={<CreateTestButton />} />
         <Route path="/create-test" element={<CreateTest />} />
         <Route path="" element={<HomePage />} />
-        <Route path="/PrintTest" element={<PrintTest/>} />
+        <Route path="/PrintTest" element={<PrintTests/>} />
         <Route path="/Authorization-st" element={<Authorization/>} />
         <Route path="/personalCabinetTeacher" element={<PersonalCabinetTeacher/>} />
         <Route path="/createQuestion" element={<CreateTests/>}/> 
+        <Route path='/PrintTests' element={<PrintTests/>}/> 
       </Routes>
     </BrowserRouter>
   );

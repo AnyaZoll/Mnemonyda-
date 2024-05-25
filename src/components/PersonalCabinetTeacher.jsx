@@ -24,8 +24,8 @@ export function PersonalCabinetTeacher() {
       </header>
       <section>
       <div className='container_personal'>
-        <p className='id_teahcer'>ФИО:</p>
-        <div classNamr="list">
+        <p className='id_teahcer'>ФИО: Золотухина Анна Александровна</p>
+        <div className="list">
           <p className='subj_test'>Предметы, по которым можно составить тест:</p>
           <div>
             <input type="checkbox" id="subName"></input>

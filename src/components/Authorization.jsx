@@ -24,7 +24,7 @@ export function Authorization(){
                 <input
                   id="name"
                   type="text"
-                  placeholder="Введите имя"
+                  placeholder="Введите фамилию"
                   className="form-input"
                   {...register('name')}
                 />
@@ -36,7 +36,7 @@ export function Authorization(){
                 <input
                   id="secondName"
                   type="text"
-                  placeholder="Введите фамилию"
+                  placeholder="Введите имя"
                   className="form-input"
                   {...register('secondName')}
                 />
@@ -47,24 +47,13 @@ export function Authorization(){
                 </label>
                 <input
                   id="password"
-                  type="tel"
+                  type="password"
                   placeholder="Введите пароль"
                   className="form-input"
                   {...register('password')}
                 />
                 </div>
-                <div className="form-group">
-                <label htmlFor="password" className="form-label">
-                  Повторный пароль
-                </label>
-                <input
-                  id="password"
-                  type="tel"
-                  placeholder="Введите пароль повторно"
-                  className="form-input"
-                  {...register('password')}
-                />
-                </div>
+               
               <div className="form-group">
                 <button 
                   onClick={handleNext}
